@@ -1,0 +1,6 @@
+export const packages = [
+  { id: "november-2026", name: "Umroh November", date: "11 November 2026", day: "11", month: "NOV", year: "2026", duration: "9 hari", price: "33,5", seats: "35 jamaah", hotels: "Azka Safa, Makkah · Mirage Salam, Madinah", image: "/images/mandala/paket-november-2026.png", width: 1220, height: 1542 },
+  { id: "desember-2026", name: "Umroh Desember", date: "2 Desember 2026", day: "02", month: "DES", year: "2026", duration: "9 hari", price: "33,5", seats: "35 jamaah", hotels: "Azka Safa, Makkah · Mirage Salam, Madinah", image: "/images/mandala/paket-desember-2026.png", width: 1222, height: 1476 },
+  { id: "rajab-5-januari-2027", name: "Umroh Rajab", date: "5 Januari 2027", day: "05", month: "JAN", year: "2027", duration: "12 hari", price: "38", seats: "40 jamaah", hotels: "Azka Safa, Makkah · Mirage Salam, Madinah", image: "/images/mandala/paket-rajab-5-januari-2027.jpg", width: 1080, height: 1350 },
+  { id: "januari-2027", name: "Umroh Awal Tahun", date: "6 Januari 2027", day: "06", month: "JAN", year: "2027", duration: "12 hari", price: "38", seats: "40 jamaah", hotels: "Hotel bintang 4 atau setaraf di Makkah dan Madinah", image: "/images/mandala/paket-januari-2027.jpg", width: 1440, height: 1800 },
+] as const;
