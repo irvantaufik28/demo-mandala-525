@@ -7,6 +7,7 @@ const bodyFont = Manrope({ subsets: ["latin"], variable: "--font-body", display:
 export const metadata: Metadata = {
   title: "Mandala 525 Islamic Tour — Untuk Setiap Hati yang Rindu Tanah Suci",
   description: "Demo Mandala 525 Islamic Tour. Pilihan umroh, haji khusus, dokumentasi jamaah dan konsultasi perjalanan ibadah.",
+  icons: { icon: "/favicon.ico?v=mandala525" },
   robots: { index: false, follow: false },
 };
 
