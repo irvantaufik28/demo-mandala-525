@@ -76,8 +76,7 @@
 .program-full-badge{position:absolute;z-index:2;top:17px;right:17px;display:inline-flex;align-items:center;min-height:26px;padding:5px 10px;font-size:8px;font-weight:800;letter-spacing:1px}
 .round-link-waitlist{color:#b52a42;border-color:#d0a4aa;background:#fff6f6}
 .round-link-waitlist:hover{background:#bd243d;color:#fff}
-.program-waitlist-note{display:block;color:#ae2a40;font-size:10px;font-weight:700;margin-top:10px}
-@media(max-width:600px){.program-full-badge{top:17px;right:17px;font-size:8px}.program-waitlist-note{font-size:10px}}
+@media(max-width:600px){.program-full-badge{top:17px;right:17px;font-size:8px}}
 
 /* Banner perlengkapan dari materi visual pengguna. */
 .kit-banner{position:relative;min-height:460px;background:#cda56f;overflow:hidden}
@@ -138,7 +137,7 @@
 /* Informasi pembanding dan ketentuan lebih penting daripada mikro-label. */
 .hero-copy>p,.about-copy p,.section-heading p,.schedule-heading>p,
 .haji-copy p,.contact-inner p,.faq-list details>p{font-size:15px;line-height:1.75}
-.program-category,.program-price small,.program-waitlist-note,
+.program-category,.program-price small,
 .program-meta,.program-includes,.package-note,.schedule-disclaimer,
 .gallery-note,.trust-inner small{font-size:12px;line-height:1.6}
 .gallery-item small,.kit-banner-note,.program-tabs button,
@@ -152,7 +151,7 @@
 @media(max-width:600px){
   .hero-copy>p,.about-copy p,.section-heading p,.schedule-heading>p,
   .haji-copy p,.contact-inner p,.faq-list details>p{font-size:14px;line-height:1.75}
-  .program-category,.program-price small,.program-waitlist-note,
+  .program-category,.program-price small,
   .program-meta,.program-includes,.package-note,.schedule-disclaimer,
   .gallery-note,.trust-inner small{font-size:12px;line-height:1.55}
   .gallery-item small,.kit-banner-note,.program-tabs button,
@@ -173,3 +172,11 @@
   .hero .eyebrow,.contact-inner .eyebrow{font-size:11px}
   .kit-banner .button{min-height:44px}
 }
+
+.program-grid{align-items:stretch;grid-auto-rows:1fr}
+.program-card{display:flex;flex-direction:column;min-height:100%}
+.program-image{flex-shrink:0}
+.program-content{display:flex;flex:1;flex-direction:column}
+.program-price{gap:10px;flex-wrap:wrap;margin-top:auto}
+.program-seat-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:auto;height:44px;padding:0 14px;border-radius:22px;font-size:11px;font-weight:700;white-space:nowrap}
+.program-seat-link svg{width:16px;height:16px}

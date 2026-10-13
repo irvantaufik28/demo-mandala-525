@@ -158,36 +158,21 @@
 }
 
 .ticket {
-  position: relative;
+  --ticket-cover-width: 54%;
   display: grid;
-  grid-template-columns: 42% minmax(0, 1fr);
+  grid-template-columns: var(--ticket-cover-width) minmax(0, 1fr);
   min-width: 0;
   background: #fffdf9;
   border: 1px solid #cfc6b2;
   border-radius: 14px;
+  mask-image:
+    radial-gradient(circle 10px at var(--ticket-cover-width) 0, transparent 98%, #000 100%),
+    radial-gradient(circle 10px at var(--ticket-cover-width) 100%, transparent 98%, #000 100%);
+  mask-composite: intersect;
 }
-
-.ticket::before,
-.ticket::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  left: 42%;
-  width: 16px;
-  height: 16px;
-  background: #f5f2ea;
-  border: 1px solid #cfc6b2;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
-.ticket::before { top: -9px; }
-.ticket::after { bottom: -9px; }
 
 .ticketImage {
   min-width: 0;
-  align-self: start;
   overflow: hidden;
   border-radius: 13px 0 0 13px;
   background: #111;
@@ -196,7 +181,9 @@
 .ticketImage img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .ticketInfo {
@@ -522,11 +509,8 @@
 
 @media (max-width: 430px) {
   .ticket {
-    grid-template-columns: 39% minmax(0, 1fr);
+    --ticket-cover-width: 44%;
   }
-
-  .ticket::before,
-  .ticket::after { left: 39%; }
 
   .ticketInfo { padding: 14px; }
   .ticketInfo h3 { margin-top: 14px; font-size: 23px; }
